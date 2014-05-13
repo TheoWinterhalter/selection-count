@@ -1,0 +1,14 @@
+{
+  "name": "char-count",
+  "main": "./lib/char-count",
+  "version": "0.0.0",
+  "description": "Adding character count (when selected)",
+  "activationEvents": ["char-count:toggle"],
+  "repository": "https://github.com/atom/char-count",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+  }
+}
