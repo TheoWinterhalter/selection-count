@@ -1,10 +1,10 @@
 {
   "name": "char-count",
   "main": "./lib/char-count",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Adding character count (when selected)",
   "activationEvents": ["char-count:toggle"],
-  "repository": "https://github.com/atom/char-count",
+  "repository": "https://github.com/iSheeft/char-count",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
