@@ -1,7 +1,7 @@
 {
   "name": "char-count",
   "main": "./lib/char-count",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Adding character count (when selected)",
   "activationEvents": [
     "char-count:toggle"
