@@ -25,7 +25,7 @@ class CharCountView extends View
 
   attach: =>
     statusbar = atom.workspaceView.statusBar
-    statusbar.appendRight this
+    statusbar.prependRight this
 
     @subscribe @editorView, "selection:changed", @displayCount
     atom.workspaceView.on 'pane:item-removed', @destroy
