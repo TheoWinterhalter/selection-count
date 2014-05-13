@@ -20,7 +20,7 @@ class CharCountView extends View
   serialize: ->
 
   # Tear down any state and detach
-  destroy: ->
+  destroy: =>
     @detach()
 
   attach: =>
