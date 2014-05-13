@@ -21,6 +21,7 @@ class CharCountView extends View
 
   # Tear down any state and detach
   destroy: =>
+    @unsubscribe
     @detach()
 
   attach: =>
