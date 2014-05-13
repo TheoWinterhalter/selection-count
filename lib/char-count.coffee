@@ -12,6 +12,3 @@ module.exports =
   deactivate: ->
     for counter in charCounters
       counter.destroy()
-
-  serialize: ->
-    charCountViewState: @charCounters.serialize()
