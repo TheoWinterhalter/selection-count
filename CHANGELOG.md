@@ -1,5 +1,5 @@
-## 0.4.0 TBA
-* WIP
+## 0.4.0 Less buggy
+* Fixed bug happening when closing a tab
 
 ## 0.3.0 - Better place
 * Text is displayed on the left rather than on the right
