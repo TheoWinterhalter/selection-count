@@ -1,5 +1,5 @@
 {
-  "name": "char-count",
+  "name": "selection-count",
   "main": "./lib/char-count",
   "version": "1.0.0",
   "description": "Counts selected characters",
