@@ -6,7 +6,7 @@ module.exports =
   activate: (state) ->
     atom.workspaceView.eachEditorView (editorView) ->
       counter = new CharCountView(editorView)
-      counter.attach()
+      counter.init()
       charCounters.push = counter
 
   deactivate: ->

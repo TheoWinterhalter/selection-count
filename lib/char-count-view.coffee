@@ -24,6 +24,9 @@ class CharCountView extends View
     @unsubscribe
     @detach()
 
+  init: ->
+    atom.packages.once('activated', @attach)
+
   attach: =>
     statusbar = atom.workspaceView.statusBar
     statusbar.prependRight this
