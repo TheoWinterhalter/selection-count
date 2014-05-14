@@ -1,6 +1,7 @@
 ## 1.0.1 Selection Count
 * Added screenshot
 * Changed name of the package
+* Added config for display
 
 ## 1.0.0 A Working Package
 * Now auto loading

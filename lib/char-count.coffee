@@ -2,6 +2,8 @@ CharCountView = require './char-count-view'
 charCounters = []
 
 module.exports =
+  configDefaults:
+    showOnTheLeft: false
 
   activate: (state) ->
     atom.workspaceView.eachEditorView (editorView) ->

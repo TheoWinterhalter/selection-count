@@ -29,7 +29,10 @@ class CharCountView extends View
 
   attach: =>
     statusbar = atom.workspaceView.statusBar
-    statusbar.prependRight this
+    if atom.config.get 'char-count.showOnTheLeft'
+      statusbar.appendLeft this
+    else
+      statusbar.prependRight this
 
     @subscribe @editorView, "selection:changed", @displayCount
     atom.workspaceView.on 'pane:item-removed', @destroy
