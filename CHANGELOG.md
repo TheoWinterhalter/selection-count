@@ -1,17 +1,8 @@
-## 1.2.3 Maybe I Should Ask For Help
-* Normally fixed
+## 1.3.0 Configuration
+* Position added to config
+* Text added to config
 
-## 1.2.2 One More Time
-* Fixed config (I still don't know how to test config without publishing. A shame)
-
-## 1.2.1 Fixed Again
-* Fixed config
-
-## 1.2 Working config
-* Fixed config
-* Added text as configurable
-
-## 1.1 Selection Count
+## 1.1.0 Selection Count
 * Added screenshot
 * Changed name of the package
 * Added config for display
