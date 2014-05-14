@@ -1,3 +1,6 @@
+## 1.2.2 One More Time
+* Fixed config (I still don't know how to test config without publishing. A shame)
+
 ## 1.2.1 Fixed Again
 * Fixed config
 
