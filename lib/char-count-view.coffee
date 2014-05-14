@@ -14,9 +14,9 @@ class CharCountView extends View
       @text("").show()
     else
       count = editor.getSelection().getText().length
-      atom.config.observe 'grammar-selector.showOnRightSideOfStatusBar', =>
-        text = atom.config.get 'selection-countt.displayText'
-      @text("#{count} #{text}").show()
+      atom.config.observe 'selection-count.displayText', =>
+        sidetext = atom.config.get 'selection-count.displayText'
+        @text("#{count} #{sidetext}").show()
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->
@@ -31,10 +31,11 @@ class CharCountView extends View
 
   attach: =>
     statusbar = atom.workspaceView.statusBar
-    if atom.config.get 'selection-count.showOnTheLeft'
-      statusbar.appendLeft this
-    else
-      statusbar.prependRight this
+    atom.config.observe 'selection-count.showOnTheLeft', =>
+      if atom.config.get 'selection-count.showOnTheLeft'
+        statusbar.appendLeft this
+      else
+        statusbar.prependRight this
 
     @subscribe @editorView, "selection:changed", @displayCount
     atom.workspaceView.on 'pane:item-removed', @destroy
