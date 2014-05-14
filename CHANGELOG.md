@@ -1,4 +1,8 @@
-## 1.0.1 Selection Count
+## 1.2 Working config
+* Fixed config
+* Added text as configurable
+
+## 1.1 Selection Count
 * Added screenshot
 * Changed name of the package
 * Added config for display

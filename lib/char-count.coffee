@@ -4,6 +4,7 @@ charCounters = []
 module.exports =
   configDefaults:
     showOnTheLeft: false
+    displayText: "characters selected"
 
   activate: (state) ->
     atom.workspaceView.eachEditorView (editorView) ->
