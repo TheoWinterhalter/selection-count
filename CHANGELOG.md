@@ -1,4 +1,4 @@
-## 1.3 Fixed Again
+## 1.2.1 Fixed Again
 * Fixed config
 
 ## 1.2 Working config
