@@ -14,7 +14,7 @@ class CharCountView extends View
       @text("").show()
     else
       count = editor.getSelection().getText().length
-      text = atom.config.get "displayText"
+      text = atom.config.get 'section-count.displayText'
       @text("#{count} #{text}").show()
 
   # Returns an object that can be retrieved when package is activated

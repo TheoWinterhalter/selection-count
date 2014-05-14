@@ -1,3 +1,6 @@
+## 1.3 Fixed Again
+* Fixed config
+
 ## 1.2 Working config
 * Fixed config
 * Added text as configurable
