@@ -1,7 +1,7 @@
 {
   "name": "selection-count",
   "main": "./lib/char-count",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Counts selected characters",
   "repository": "https://github.com/iSheeft/char-count",
   "license": "MIT",
