@@ -3,9 +3,6 @@
   "main": "./lib/char-count",
   "version": "0.4.0",
   "description": "Counts selected characters",
-  "activationEvents": [
-    "char-count:toggle"
-  ],
   "repository": "https://github.com/iSheeft/char-count",
   "license": "MIT",
   "engines": {
