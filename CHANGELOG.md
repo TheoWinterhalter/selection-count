@@ -1,3 +1,6 @@
+## 1.2.3 Maybe I Should Ask For Help
+* Normally fixed
+
 ## 1.2.2 One More Time
 * Fixed config (I still don't know how to test config without publishing. A shame)
 
