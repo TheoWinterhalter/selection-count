@@ -1,4 +1,4 @@
-# char-count package
+# Selection count package
 
 Adding character count (when selected) to the atom editor.
 

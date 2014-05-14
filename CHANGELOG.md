@@ -1,5 +1,6 @@
 ## 1.0.0 A Working Package
 * Now auto loading
+* Changed name
 
 ## 0.4.0 Less buggy
 * Fixed bug happening when closing a tab
