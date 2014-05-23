@@ -1,4 +1,4 @@
-CharCountView = require './char-count-view'
+CharCountView = require './selection-count-view'
 charCounters = []
 
 module.exports =

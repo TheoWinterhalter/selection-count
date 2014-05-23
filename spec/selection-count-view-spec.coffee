@@ -1,4 +1,4 @@
-CharCountView = require '../lib/char-count-view'
+CharCountView = require '../lib/selection-count-view'
 
 describe "CharCountView", ->
   it "has one valid test", ->

@@ -1,3 +1,6 @@
+## 1.4.0
+* Updated name everywhere
+
 ## 1.3.0 Configuration
 * Position added to config
 * Text added to config

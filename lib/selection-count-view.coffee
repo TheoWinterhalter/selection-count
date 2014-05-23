@@ -3,7 +3,7 @@
 module.exports =
 class CharCountView extends View
   @content: ->
-    @div class: 'char-count inline-block'
+    @div class: 'selection-count inline-block'
 
   initialize: (editorView) ->
     @editorView = editorView
