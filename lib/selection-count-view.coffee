@@ -14,8 +14,8 @@ class SelectionCountView extends View
       @text("nothing (debug)").show()
     else
       count = editor.getSelection().getText().length
-      atom.config.observe 'selection-count.displayText', =>
-        sidetext = atom.config.get 'selection-count.displayText'
+      atom.config.observe 'selection-count.displayedText', =>
+        sidetext = atom.config.get 'selection-count.displayedText'
         @text("#{count} #{sidetext}").show()
 
   # Returns an object that can be retrieved when package is activated
