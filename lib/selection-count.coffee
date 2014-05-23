@@ -1,14 +1,14 @@
-CharCountView = require './selection-count-view'
+SelectionCountView = require './selection-count-view'
 charCounters = []
 
 module.exports =
   configDefaults:
     showOnTheLeft: false
-    displayText: "characters selected"
+    displayedText: "characters selected"
 
   activate: (state) ->
     atom.workspaceView.eachEditorView (editorView) ->
-      counter = new CharCountView(editorView)
+      counter = new SelectionCountView(editorView)
       counter.init()
       charCounters.push = counter
 

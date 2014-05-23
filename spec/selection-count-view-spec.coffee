@@ -1,5 +1,5 @@
-CharCountView = require '../lib/selection-count-view'
+SelectionCountView = require '../lib/selection-count-view'
 
-describe "CharCountView", ->
+describe "SelectionCountView", ->
   it "has one valid test", ->
     expect("life").toBe "easy"

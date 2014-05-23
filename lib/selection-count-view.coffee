@@ -1,7 +1,7 @@
 {View, EditorView} = require 'atom'
 
 module.exports =
-class CharCountView extends View
+class SelectionCountView extends View
   @content: ->
     @div class: 'selection-count inline-block'
 
@@ -11,7 +11,7 @@ class CharCountView extends View
   displayCount: =>
     return unless editor = atom.workspace.getActiveEditor()
     if editor.getSelection().isEmpty()
-      @text("").show()
+      @text("nothing (debug)").show()
     else
       count = editor.getSelection().getText().length
       atom.config.observe 'selection-count.displayText', =>
