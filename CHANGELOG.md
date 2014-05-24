@@ -1,5 +1,6 @@
 ## 1.4.0
 * Updated name everywhere
+* Fixed the package
 
 ## 1.3.0 Configuration
 * Position added to config

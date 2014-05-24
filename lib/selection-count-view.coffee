@@ -5,13 +5,15 @@ class SelectionCountView extends View
   @content: ->
     @div class: 'selection-count inline-block'
 
-  initialize: (editorView) ->
-    @editorView = editorView
+  # initialize: (editorView) ->
+  #   @editorView = editorView
 
-  displayCount: =>
+  initialize: ->
+
+  updateCount: =>
     return unless editor = atom.workspace.getActiveEditor()
     if editor.getSelection().isEmpty()
-      @text("nothing (debug)").show()
+      @text("").show()
     else
       count = editor.getSelection().getText().length
       atom.config.observe 'selection-count.displayedText', =>
@@ -37,5 +39,10 @@ class SelectionCountView extends View
       else
         statusbar.prependRight this
 
-    @subscribe @editorView, "selection:changed", @displayCount
+    atom.workspaceView.eachEditorView (editor) =>
+      @subscribe editor, "selection:changed", @updateCount
+
+    @subscribe atom.workspaceView, "pane-container:active-pane-item-changed", @updateCount
     atom.workspaceView.on 'pane:item-removed', @destroy
+
+    @updateCount()

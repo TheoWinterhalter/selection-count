@@ -1,17 +1,24 @@
 SelectionCountView = require './selection-count-view'
-charCounters = []
+# charCounters = []
 
 module.exports =
+  selectionCountView: null
   configDefaults:
     showOnTheLeft: false
     displayedText: "characters selected"
 
   activate: (state) ->
-    atom.workspaceView.eachEditorView (editorView) ->
-      counter = new SelectionCountView(editorView)
-      counter.init()
-      charCounters.push = counter
+    @selectionCountView = new SelectionCountView()
+    @selectionCountView.init()
+    # atom.workspaceView.eachEditorView (editorView) ->
+      # counter = new SelectionCountView(editorView)
+      # counter.init()
+      # charCounters.push = counter
 
   deactivate: ->
-    for counter in charCounters
-      counter.destroy()
+    @selectionCountView.destroy()
+    # for counter in charCounters
+    #   counter.destroy()
+
+  serialize: ->
+    selectionCountViewState: @selectionCountView.serialize()
