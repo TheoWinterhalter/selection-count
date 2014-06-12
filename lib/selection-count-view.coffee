@@ -5,9 +5,6 @@ class SelectionCountView extends View
   @content: ->
     @div class: 'selection-count inline-block'
 
-  # initialize: (editorView) ->
-  #   @editorView = editorView
-
   initialize: ->
 
   updateCount: =>
@@ -18,7 +15,11 @@ class SelectionCountView extends View
       count = editor.getSelection().getText().length
       atom.config.observe 'selection-count.displayedText', =>
         sidetext = atom.config.get 'selection-count.displayedText'
-        @text("#{count} #{sidetext}").show()
+        atom.config.observe 'selection-count.displaySpace', =>
+          if atom.config.get 'selection-count.displaySpace'
+            @text("#{count} #{sidetext}").show()
+          else
+            @text("#{count}#{sidetext}").show()
 
   # Returns an object that can be retrieved when package is activated
   serialize: ->

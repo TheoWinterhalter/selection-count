@@ -6,6 +6,7 @@ module.exports =
   configDefaults:
     showOnTheLeft: false
     displayedText: "characters selected"
+    displaySpace: true
 
   activate: (state) ->
     @selectionCountView = new SelectionCountView()

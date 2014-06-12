@@ -1,3 +1,6 @@
+## 1.5.0
+* Added space option
+
 ## 1.4.0
 * Updated name everywhere
 * Fixed the package
