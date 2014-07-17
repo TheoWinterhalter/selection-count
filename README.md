@@ -1,4 +1,4 @@
-# skcqojvojojSelection count package
+# Selection count package
 
 Add selection count (number of chars selected) to the atom editor.
 
