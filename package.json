@@ -3,7 +3,7 @@
   "main": "./lib/selection-count",
   "version": "1.5.0",
   "description": "Counts selected characters.",
-  "repository": "https://github.com/iSheeft/char-count",
+  "repository": "https://github.com/iSheeft/selection-count",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
